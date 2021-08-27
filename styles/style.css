@@ -54,7 +54,10 @@ header nav {
     justify-content: space-around;
     padding: 32px 0px 24px 0;
 }
-
+header nav a,
+    header nav span {
+        padding: 8px;
+    }
 header nav a {
     color: #0D0D0D;
     text-decoration: none;
@@ -62,19 +65,18 @@ header nav a {
 }
 
 header nav span {
-    color: #EF8961;
+    color: #0d0d0d;
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 400;
+    text-align: center;
+    border-bottom: 5px solid #fbe2da;
+
 
 }
 
 header nav a:hover {
-    color: #EF8961;
-}
-
-header nav a:active {
-    color: #EF8961;
+    color: #F09675;
 }
 
 h1 {
@@ -85,13 +87,15 @@ h1 {
 }
 
 h2 {
-    color: #F6C7B8;
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 4.6rem;
+    color: #3d3d3d;
+    font-weight: 300;
     text-align: center;
     margin-bottom: 24px;
     padding-right: 8px;
+    background:#fff;
 }
+
 
 main {
     margin-bottom: 96px;
@@ -121,7 +125,7 @@ main {
     font-size: 1.8rem;
     line-height: 1em;
     padding: 5px;
-    background: #f7c7b7;
+    background: #FBE2DA;
     font-weight: 300;
 
 }
@@ -140,11 +144,11 @@ main {
 }
 
 .main__bt--primary {
-    border: 3px solid #EF8961;
-    background: #EF8961;
+    border: 3px solid #F09675;
+    background: #F09675;
     padding: 16px;
     font-size: 1.6rem;
-    color: #ffffff;
+    color: #0d0d0d;
     font-weight: 500;
     display: inline-block;
     text-decoration: none;
@@ -218,10 +222,10 @@ main {
 }
 
 .main__bt--secundary {
-    border: 3px solid #EF8961;
+    border: 3px solid #F09675;
     padding: 16px;
     font-size: 1.6rem;
-    color: #EF8961;
+    color: #F09675;
     font-weight: 600;
     display: inline-block;
     text-decoration: none;
@@ -276,7 +280,7 @@ main {
 }
 
 footer {
-    background: #EF8961;
+    background: #F09675;
     width: 100vw;
     margin-left: 0px;
     margin-right: 0px;
@@ -368,9 +372,11 @@ footer>img {
 }
 
 h2.main__skills-title {
-    margin-bottom: -6px;
     margin-top: 56px;
     text-align: center;
+}
+.main__skills h2.main__skills-title {
+    background:none;
 }
 
 .main__skills div {
@@ -391,7 +397,7 @@ h2.main__skills-title {
 
 .main__presentation.aboutme p span {
     font-weight: 600;
-    color: #EF8961;
+    color: #F09675;
     font-size: 1.8rem;
 }
 
@@ -485,7 +491,7 @@ h2.main__skills-title {
 }
 
 .main__contacto p .txt-rotate {
-    color: #EF8961;
+    color: #F09675;
     margin-bottom: 40px;
     display: block;
 }
@@ -532,11 +538,14 @@ h2.main__skills-title {
 
     header nav a,
     header nav span {
-        padding-left: 40px;
+        padding: 8px 16px;
     }
 
     main {
         margin-top: 20px;
+    }
+    h2 {
+        font-size: 5.6rem;
     }
 
     .main__presentation {
